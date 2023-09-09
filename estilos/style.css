@@ -153,7 +153,7 @@ aside{
 }
 aside > ul{
     background-color: var(--cor00);
-    padding: 20px;
+    padding: 10px;
     border-radius: 25px 0px 25px 0px;
     box-shadow: 0px 0px 5px var(--cor04);
     list-style-position: inside;
