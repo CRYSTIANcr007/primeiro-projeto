@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@900&family=Monoton&family=VT323&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url(../fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor_fundo: rgba(179, 255, 185, 0.5);
+    --cor00: #caebd8;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2fa866;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+
+    --font_padrao: 'arial', 'verdana', 'helvetica', 'sans-serif';
+    --font_destaque:'Bebas Neue', sans-serif;
+    --font_android: 'android', 'cursive';
+}
+body{
+    background-color: var(--cor_fundo);
+    font-family: var(--font_padrao);
+}
+
+
+
+header{
+    
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    min-height: 150px;
+    text-align: center;
+    
+}
+header > h1{       
+    font-weight: normal; 
+    color: white;
+    font-family: var(--font_destaque);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.836);
+    padding-top: 35px;
+    padding-left: 8px;
+    padding-right:8px ;
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+header > p{
+    color: white;
+    font-family: var(--font_padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px 10px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.623);
+    
+}
+
+
+nav{
+    background-color: var(--cor05);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.438);
+}
+nav > a{
+    color: var(--cor02);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bolder;
+    transition-duration: .2s;
+}
+nav > a:hover{
+    color: var(--cor05);
+    background-color: var(--cor02);
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    border-radius: 2px 2px 15px 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+}
+main h1{
+    font-family: var(--font_android);
+    color: var(--cor05);
+    line-height: 2em;
+    font-size: 1.9em;
+    font-weight: normal;
+    
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    
+}
+
+main img{
+    width: 100%;
+}
+main strong{
+    font-size: 1.2em;
+    font-family: var(--font_padrao);
+    color: var(--cor04);
+}
+main a{
+    font-size: 1.1em;
+    font-weight: bolder;
+    color: var(--cor05);
+    background-color: var(--cor01);
+    text-decoration: none;
+    border-radius: 2px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor04);
+}
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+main h2{
+    font-family: var(--font_android);
+    color: var(--cor04);
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: normal;
+
+}
+a.externo::after{
+    content: '\1F517';
+    
+}
+
+aside{
+    background-color: var(--cor01);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--cor05);
+
+}
+aside > ul{
+    background-color: var(--cor00);
+    padding: 20px;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: 0px 0px 5px var(--cor04);
+    list-style-position: inside;
+    columns: 2;
+    margin: 0px 10%;
+}
+aside > h3{
+    background-color: var(--cor05);
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    text-decoration: underline;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    font-weight: normal;
+    
+}
+
+footer{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    color: var(--cor02);
+    font-size: 1.1em;
+    text-shadow: 0px 0px 3px var(--cor01);
+}
+
+footer  a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 0px 5px;
+    text-shadow: 1px 1px 1px black;
+    font-family: serif;
+}
+footer a:hover{
+    color: var(--cor00);
+    text-decoration: underline;
+    
+}
